@@ -1,0 +1,138 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+.input-wrapper {
+  position: relative;
+  width: fit-content;
+}
+
+.input-wrapper input {
+  appearance: none;
+  height: 32px;
+  font-size: large;
+  border-radius: 16px;
+  padding: 0 35px 0 17px;
+  width: 260px;
+  box-sizing: border-box;
+  background-color: #fbfbfb;
+  outline: none;
+  border: 1px solid #dadbde;
+}
+
+.input-wrapper input:focus {
+  border: 1px solid #00acc2;
+  box-shadow: 0 0 4px rgba(0, 172, 194, 0.52);
+}
+
+.input-wrapper .icon-search {
+  appearance: none;
+  border: none;
+  color: #fff;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #00acc2;
+  z-index: 200;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn:hover {
+  color: #212529aa;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+.btn {
+  border-radius: 4px;
+  font-size: 14px;
+  height: 32px;
+  padding: 5px 8px;
+  padding: 8.5px 8px;
+  height: 40px;
+}
+
+.btn--lightgreen {
+  background-color: #cdecf1 !important;
+  color: #00acc2;
+}
+
+.btn--lightgreen:hover {
+  background: #a5dde6;
+}
+
+@media (max-width: 576px) {
+  .input-wrapper {
+    width: 100%;
+  }
+
+  .input-wrapper.large input {
+    width: 100%;
+  }
+}
+
+.input-wrapper.medium input {
+  width: 320px;
+}
+
+.input-wrapper.large input {
+  width: 400px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.input-wrapper.fluid {
+  display: inline;
+}
+
+.input-wrapper.fluid input {
+  width: 100%;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+}
+
+.center-content.col {
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-page {
+  padding-top: 40px;
+  margin: auto;
+  max-width: 774px;
+}
