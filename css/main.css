@@ -1,0 +1,19 @@
+.content-page {
+  padding-top: 40px;
+  margin: auto;
+  max-width: 774px;
+}
+
+.content-page h1.green {
+  color: #00acc2;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+}
+
+.center-content.col {
+  flex-direction: column;
+  align-items: center;
+}
