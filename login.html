@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Noble Quran - Login</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="container content-page">
+        <div class="center-content col">
+          <div class="login-form" style="margin-top: 20px">
+            <form action="/login" method="post">
+              <label for="email">Email</label>
+              <div class="input-wrapper large">
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <label for="password">Password</label>
+              <div class="input-wrapper large">
+                <input type="password" id="password" name="password" required />
+              </div>
+
+              <button
+                type="submit"
+                class="btn large btn--lightgreen"
+                style="margin-top: 10px">
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
