@@ -12,4 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 10);
     return;
   }
+
+  registerForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirm-password").value;
+  });
 });
