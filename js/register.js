@@ -29,5 +29,14 @@ document.addEventListener("DOMContentLoaded", () => {
       messageDiv.textContent = "User already registered. Please log in.";
       return;
     }
+
+    const user = { email, password };
+    localStorage.setItem("user", JSON.stringify(user));
+    messageDiv.style.color = "green";
+    messageDiv.textContent = "Registration successful! Redirecting to login...";
+
+    setTimeout(() => {
+      window.location.href = "/login.html";
+    }, 2000);
   });
 });
