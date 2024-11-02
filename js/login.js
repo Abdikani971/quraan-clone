@@ -11,4 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "/index.html";
     }, 10);
   }
+
+  loginForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+  });
 });
