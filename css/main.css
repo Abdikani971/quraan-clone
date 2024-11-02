@@ -15,6 +15,26 @@ body {
   background-color: white;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
 .content-page {
   padding-top: 40px;
   margin: auto;
