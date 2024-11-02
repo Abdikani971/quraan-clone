@@ -101,3 +101,150 @@
 .surah-card-arabic .icon-surah {
   font-size: 25px;
 }
+
+.translation-item {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+@media (max-width: 576px) {
+  .translation-item {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.translation-item .translation-icon {
+  font-family: inherit;
+  height: 30px;
+  cursor: pointer;
+  margin: 10px 0;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #00acc2;
+  font-size: 22px;
+}
+
+@media (max-width: 576px) {
+  .translation-item .translation-icon {
+    margin: 10px;
+  }
+}
+
+.translation-item .ayah-badge {
+  background-color: #ebebed;
+  color: #71727e;
+  border-radius: 4px;
+  padding: 3px 4px;
+  font-size: 14px;
+}
+
+@media (max-width: 576px) {
+  .translation-item .ayah-badge-link,
+  .translation-item .qr {
+    margin-top: 0;
+  }
+}
+
+.translation-item .translation-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+  padding-left: 40px;
+}
+
+@media (max-width: 576px) {
+  .translation-item .translation-text {
+    padding-left: 0;
+  }
+}
+
+.translation-item .verse-translations {
+  display: flex;
+  flex-direction: column;
+  flex: 3 1;
+}
+
+@media (max-width: 576px) {
+  .translation-item .verse-translations {
+    margin-left: 0;
+  }
+}
+
+.translation-item .translation-arabic {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 30px;
+}
+
+@media (max-width: 576px) {
+  .translation-item .translation-arabic {
+    padding-top: 0;
+  }
+}
+
+.translation-item .translation-arabic p {
+  text-align: end;
+  margin: 0;
+  padding: 0;
+}
+
+.surah-name {
+  margin-top: 2rem;
+}
+
+.surah-name .icon-surah {
+  font-size: 40px;
+}
+
+.translation-text sup {
+  color: #00acc2;
+  cursor: pointer;
+}
+
+.separator {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #dfdfe0;
+  margin: 4px 0 8px;
+}
+
+.text {
+  text-decoration: none;
+  padding: 0;
+  margin: 5px;
+}
+
+.text-green {
+  color: #00acc2;
+}
+
+.text-medium {
+  font-size: 14px;
+}
+
+.arabic {
+  font-size: 30px;
+  line-height: normal;
+  color: #1c1c20;
+  z-index: 1;
+}
+
+@media (max-width: 576px) {
+  .arabic {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .arabic {
+    font-size: 20px;
+  }
+}
+
+.surah-starting-title {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
