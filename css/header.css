@@ -71,6 +71,11 @@ a {
   text-decoration: none;
 }
 
+.quran-logo {
+  max-width: 315px;
+  width: 100%;
+}
+
 .user-buttons {
   color: #00acc2;
   margin-left: 1rem;
