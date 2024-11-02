@@ -74,6 +74,8 @@ a {
 .quran-logo {
   max-width: 315px;
   width: 100%;
+  user-select: none;
+  pointer-events: none;
 }
 
 .user-buttons {
