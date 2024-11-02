@@ -23,5 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
       messageDiv.textContent = "Passwords do not match!";
       return;
     }
+
+    const existingUser = JSON.parse(localStorage.getItem("user"));
+    if (existingUser) {
+      messageDiv.textContent = "User already registered. Please log in.";
+      return;
+    }
   });
 });
