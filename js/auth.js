@@ -7,6 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
     loginButton.style.display = "none";
     registerButton.style.display = "none";
     logoutButton.style.display = "inline";
+
+    logoutButton.addEventListener("click", () => {
+      localStorage.removeItem("isLoggedIn");
+      alert("You have been logged out.");
+      window.location.reload();
+    });
   } else {
     logoutButton.style.display = "none";
   }
