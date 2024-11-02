@@ -18,8 +18,26 @@
           </a>
         </div>
         <div>
-          <a class="user-buttons" href="/login.html">Login</a>
-          <a class="user-buttons" href="/register.html">Register</a>
+          <button
+            id="logout-button"
+            class="btn large btn--lightgreen"
+            style="display: none">
+            Logout
+          </button>
+          <a
+            class="user-buttons"
+            id="login-button"
+            href="/login.html"
+            style="display: inline"
+            >Login</a
+          >
+          <a
+            class="user-buttons"
+            id="register-button"
+            href="/register.html"
+            style="display: inline"
+            >Register</a
+          >
         </div>
       </div>
     </div>
@@ -141,5 +159,7 @@
         </p>
       </div>
     </div>
+
+    <script src="js/auth.js"></script>
   </body>
 </html>
