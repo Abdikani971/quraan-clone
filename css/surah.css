@@ -33,6 +33,7 @@
   padding: 16px;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .surah-card:hover {
@@ -85,6 +86,7 @@
   height: 24px;
   padding: 2px 8px;
   margin-right: 8px;
+  width: 100%;
 }
 
 .surah-card-arabic {
@@ -247,4 +249,23 @@
   text-align: center;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.loader {
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-top: 8px solid #00acc1;
+  border-radius: 50%;
+  width: 50px;
+  margin-top: 1rem;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
