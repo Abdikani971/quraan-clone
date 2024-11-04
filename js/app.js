@@ -1,3 +1,5 @@
+let allSurahs = [];
+
 const fetchingSurah = async () => {
   const loader = document.querySelector(".loader");
   loader.style.display = "block";
@@ -7,7 +9,8 @@ const fetchingSurah = async () => {
     const data = await response.json();
 
     if (Array.isArray(data)) {
-      renderSurahList(data);
+      allSurahs = data;
+      renderSurahList(allSurahs);
     } else {
       console.error("Unexpected data format");
     }
@@ -24,8 +27,8 @@ const renderSurahList = (surahs) => {
 
   surahs.forEach((surah, index) => {
     const currentIndex = index + 1;
-    const surahCard = document.createElement("a");
-    surahCard.innerHTML += `
+    const surahCard = document.createElement("div");
+    surahCard.innerHTML = `
       <a href="surah.html?surah=${currentIndex}">
         <div class="surah-card">
           <div class="surah-card-number">${currentIndex}</div>
@@ -48,6 +51,24 @@ const renderSurahList = (surahs) => {
     surahList.appendChild(surahCard);
   });
 };
+
+const handleSearch = () => {
+  const searchInput = document
+    .getElementById("search-input")
+    .value.toLowerCase();
+
+  const filteredSurahs = allSurahs.filter((surah) => {
+    return (
+      surah.surahName.toLowerCase().includes(searchInput) ||
+      surah.surahNameTranslation.toLowerCase().includes(searchInput) ||
+      surah.surahNameArabicLong.toLowerCase().includes(searchInput)
+    );
+  });
+
+  renderSurahList(filteredSurahs);
+};
+
+document.getElementById("search-form").addEventListener("submit", handleSearch);
 
 document.addEventListener("DOMContentLoaded", () => {
   fetchingSurah();
