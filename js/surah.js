@@ -56,3 +56,5 @@ const fetchingSingalSurah = async () => {
     console.error("Error:", error);
   }
 };
+
+fetchingSingalSurah();
