@@ -12,4 +12,13 @@ const fetchingSingalSurah = async () => {
       </div>
     </div>
   `;
+
+  try {
+    const response = await fetch(
+      `https://quranapi.pages.dev/api/${surahNumber}.json`
+    );
+    const data = await response.json();
+  } catch (error) {
+    console.error("Error:", error);
+  }
 };
