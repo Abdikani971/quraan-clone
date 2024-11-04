@@ -18,6 +18,8 @@ const fetchingSingalSurah = async () => {
       `https://quranapi.pages.dev/api/${surahNumber}.json`
     );
     const data = await response.json();
+
+    ayahContainer.innerHTML = "";
   } catch (error) {
     console.error("Error:", error);
   }
